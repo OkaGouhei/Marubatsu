@@ -61,15 +61,19 @@ public class Marubatsu{
             System.out.println();
           }
           if((array[0][0]==a&&array[0][1]==a&& array[0][2]==a )||(array[1][0] == a&&array[1][1]==a&&array[1][2]==a )||(array[2][0]==a&&array[2][1]==a&&array[2][2]==a )){
+            System.out.println(a + "の勝ちです。");
             break;
           }
           if((array[0][0]==a && array[1][0]==a && array[2][0]==a )||(array[0][1]==a && array[1][1]==a && array[2][1]==a )||(array[0][2]==a && array[1][2]==a && array[2][2]==a )){
+            System.out.println(a + "の勝ちです。");
             break;
           }
           if(array[0][0]==a && array[1][1]==a && array[2][2]==a){
+            System.out.println(a + "の勝ちです。");
             break;
           }
           if(array[0][2]==a && array[1][1]==a && array[2][0]==a){
+            System.out.println(a + "の勝ちです。");
             break;
           }
           repeat = false;
@@ -79,6 +83,9 @@ public class Marubatsu{
                 repeat = true;
               }
             }
+          }
+          if (repeat == false){
+            System.out.println("あいこです。");
           }
           m++;
         }
