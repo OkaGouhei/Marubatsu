@@ -84,7 +84,7 @@ public class Marubatsu{
           }
         }
       }
-      if (repeat == false){
+      if (!repeat){
         System.out.println("あいこです。");
       }
       m++;
