@@ -9,10 +9,10 @@ public class Marubatsu{
         array[i][j] = " ";
       }
      }
-    for(int k = 0;k < 3;k++ ){
-      for(int l = 0;l < 3;l++ ){
-        System.out.print(array[k][l]);
-        if(l==2){
+    for(int i = 0;i < 3;i++ ){
+      for(int j = 0;j < 3;j++ ){
+        System.out.print(array[i][j]);
+        if(j==2){
           continue;
         }
         System.out.print(" |");
@@ -23,6 +23,7 @@ public class Marubatsu{
     String y = "@";
     boolean repeat = true;
     int m = 0;
+    Scanner scan = new Scanner(System.in);
     while(repeat){
       String a;
       if (m%2==0){
@@ -31,7 +32,7 @@ public class Marubatsu{
         a = y;
       }
       System.out.println(a + "の番です");
-      Scanner scan = new Scanner(System.in);
+
       System.out.println("たて");
       int number1 = scan.nextInt();
 
@@ -50,10 +51,10 @@ public class Marubatsu{
         continue;
       }
       array[number1][number2] = a;
-      for(int k = 0;k < 3;k++ ){
-        for(int l = 0;l < 3;l++ ){
-          System.out.print(array[k][l]);
-          if(l==2){
+      for(int i = 0;i< 3;i++ ){
+        for(int j = 0;j < 3;j++ ){
+          System.out.print(array[i][j]);
+          if(j==2){
             continue;
           }
           System.out.print(" |");
@@ -77,9 +78,9 @@ public class Marubatsu{
         break;
       }
       repeat = false;
-      for(int k = 0;k < 3;k++ ){
-        for(int l = 0;l < 3;l++ ){
-          if (array[k][l] == " "){
+      for(int i = 0;i < 3;i++ ){
+        for(int j = 0;j < 3;j++ ){
+          if (array[i][j] == " "){
             repeat = true;
           }
         }
