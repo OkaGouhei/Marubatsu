@@ -9,17 +9,8 @@ public class Marubatsu{
         array[i][j] = " ";
       }
      }
-    // for(int i = 0;i < 3;i++ ){
-    //   for(int j = 0;j < 3;j++ ){
-    //     System.out.print(array[i][j]);
-    //     if(j==2){
-    //       continue;
-    //     }
-    //     System.out.print(" |");
-    //   }
-    //   System.out.println();
-    // }
-    banmen(array[i][j]);
+
+    banmen(array);
     String x = "*";
     String y = "@";
     boolean repeat = true;
@@ -53,17 +44,7 @@ public class Marubatsu{
       }
       array[number1][number2] = a;
 
-      // for(int i = 0;i < 3;i++ ){
-      //   for(int j = 0;j < 3;j++ ){
-      //     System.out.print(array[i][j]);
-      //     if(j==2){
-      //       continue;
-      //     }
-      //     System.out.print(" |");
-      //   }
-      //   System.out.println();
-      // }
-      banmen(array[i][j]);
+      banmen(array);
       if((array[0][0]==a&&array[0][1]==a&& array[0][2]==a )||(array[1][0] == a&&array[1][1]==a&&array[1][2]==a )||(array[2][0]==a&&array[2][1]==a&&array[2][2]==a )){
         System.out.println(a + "の勝ちです。");
         break;
